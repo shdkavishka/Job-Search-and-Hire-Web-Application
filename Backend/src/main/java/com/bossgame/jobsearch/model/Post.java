@@ -1,10 +1,10 @@
-package com.telusko.joblisting.model;
+package com.bossgame.jobsearch.model;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Arrays;
 
-@Document(collection = "JobPost")
+@Document(collection = "jobpost")
 public class Post {
     private String profile;
     private String desc;
@@ -48,7 +48,7 @@ public class Post {
 
     @Override
     public String toString() {
-        return "Post{" +
+        return "post{" +
                 "profile='" + profile + '\'' +
                 ", desc='" + desc + '\'' +
                 ", exp=" + exp +

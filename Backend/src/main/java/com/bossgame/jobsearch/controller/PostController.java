@@ -1,8 +1,8 @@
-package com.telusko.joblisting.controller;
+package com.bossgame.jobsearch.controller;
 
-import com.telusko.joblisting.repository.PostRepository;
-import com.telusko.joblisting.model.Post;
-import com.telusko.joblisting.repository.SearchRepository;
+import com.bossgame.jobsearch.model.Post;
+import com.bossgame.jobsearch.repository.PostRepository;
+import com.bossgame.jobsearch.repository.SearchRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import springfox.documentation.annotations.ApiIgnore;

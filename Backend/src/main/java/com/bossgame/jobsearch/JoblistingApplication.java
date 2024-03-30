@@ -1,4 +1,4 @@
-package com.telusko.joblisting;
+package com.bossgame.jobsearch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

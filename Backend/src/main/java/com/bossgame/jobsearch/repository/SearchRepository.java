@@ -1,6 +1,6 @@
-package com.telusko.joblisting.repository;
+package com.bossgame.jobsearch.repository;
 
-import com.telusko.joblisting.model.Post;
+import com.bossgame.jobsearch.model.Post;
 
 import java.util.List;
 
