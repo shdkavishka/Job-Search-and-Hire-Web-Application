@@ -16,13 +16,13 @@ import java.util.List;
 public class PostController
 {
 
-    @Autowired
+    @Autowired  //spring annotation create object for us
     PostRepository repo;
 
     @Autowired
     SearchRepository srepo;
 
-    @ApiIgnore
+    @ApiIgnore //remove all the predefine requests
     @RequestMapping(value="/")
     public void redirect(HttpServletResponse response) throws IOException {
         response.sendRedirect("/swagger-ui.html");

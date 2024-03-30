@@ -29,8 +29,8 @@ public class SearchRepositoryImpl implements SearchRepository{
 
         final List<Post> posts = new ArrayList<>();
 
-        MongoDatabase database = client.getDatabase("telusko");
-        MongoCollection<Document> collection = database.getCollection("JobPost");
+        MongoDatabase database = client.getDatabase("kavishka");
+        MongoCollection<Document> collection = database.getCollection("jobpost");
 
         AggregateIterable<Document> result = collection.aggregate(Arrays.asList(new Document("$search",
                         new Document("text",
@@ -39,7 +39,7 @@ public class SearchRepositoryImpl implements SearchRepository{
                         new Document("$sort",
                         new Document("exp", 1L)),
                         new Document("$limit", 5L)));
-
+        //what ever doc that receive for each iteration will add that in to post
         result.forEach(doc -> posts.add(converter.read(Post.class,doc)));
 
         return posts;

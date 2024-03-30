@@ -3,8 +3,8 @@ package com.bossgame.jobsearch.model;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Arrays;
-
-@Document(collection = "jobpost")
+//this model class called pojo class
+@Document(collection = "jobpost") //which collection we should map
 public class Post {
     private String profile;
     private String desc;
